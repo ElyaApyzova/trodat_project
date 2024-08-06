@@ -19,11 +19,9 @@
             <img class="logo__img" src="./images/trodat_logo.png" alt="" />
           </a>
           <nav class="menu header__menu">
-            <button class="menu__btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
+            <div class="menu__btn">
+              <img class="menu__btn-img" src="./images/menu_img.png" alt="">
+            </div>
             <ul class="menu__list header__menu-list">
               <li class="menu__list__item">
                 <a class="menu__list__link" href="#">Главная</a>
@@ -46,17 +44,51 @@
             </ul>
           </nav>
           <div class="header__items">
-            <div>
-                <img src="./images/search_icon.png" alt="">
+            <div class="header__search">
+                <img class="header__search-img" src="./images/search_icon.png" alt="">
             </div>
-            <div>
-                <img src="./images/user_icon.png" alt="">
+            <div class="header__user">
+                <img class="header__user-img" src="./images/user_icon.png" alt="">
             </div>
-            <div>
-                <img src="./images/cart_icon.png" alt="">
+            <div class="header__cart">
+                <div class="header__cart-description">
+                    <p class="header__cart-text">корзина</p>
+                </div>
+                <div class="header__cart-btn">
+                <img class="header__cart-img" src="./images/cart_icon.png" alt="">
+                <div class="header__cart-box">
+                <span class="header__cart-number">5</span>
+            </div>
+            </div>
             </div>
           </div>
         </div>
       </header> 
+      <main>
+        <section class="catalog">
+        <div class="container">
+        <h1 class="catalog__title">Каталог Trodat</h1>
+        <span class="catalog__line"></span>
+        <div class="catalog__box">
+        <div class="catalog__sorts">
+            <img class="catalog__sorts-img" src="./images/filter-img.png" alt="">
+            <p class="catalog__sorts-text">Сортировка</p>
+        </div>
+        <div class="catalog__search">
+            <img class="catalog__search-img" src="./images/search_icon.png" alt="">
+            <p class="catalog__search-text">Искать товар...</p>
+        </div>
+        </div>
+
+
+        <div class="catalog__catalog">
+         <div class="catalog__infos">
+            
+         </div>
+         <div class="catalog__cards"></div>
+        </div>
+        </div>
+        </section>
+      </main>
 </body>
 </html>

@@ -1,4 +1,4 @@
-.footer-child,
+/*.footer-child,
 .footer-item {
   position: absolute;
   top: 0;
@@ -1347,4 +1347,146 @@
   font-size: var(--body-2-size);
   color: var(--text);
   font-family: var(--font-roboto);
+}*/
+
+
+
+/* Catalog_styles*/
+
+
+.menu__btn {
+  display: none;
+  width: 26px;
+  height: 16px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.menu__btn span {
+  height: 2px;
+  background-color: #47b47d;
+  width: 100%;
+}
+
+
+
+.inner__header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__img {
+  width: 131px;
+  
+}
+
+.menu__list {
+  display: flex;
+  gap: 44px;
+}
+
+.header__items {
+  display: flex;
+  gap: 15px;
+}
+
+.header__search {
+  position: relative;
+  border: 1px solid var(--grey);
+  border-radius: var(--br-5xl);
+  width: 34px;
+  height: 34px;
+}
+
+.header__search-img {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+
+.header__user {
+  position: relative;
+  border: 1px solid var(--grey);
+  border-radius: var(--br-5xl);
+  width: 34px;
+  height: 34px;
+}
+
+.header__user-img {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.header__cart {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  border: 1px solid var(--grey);
+  border-radius: var(--br-5xl);
+  width: 113px;
+  height: 34px;
+}
+
+
+.header__cart-description {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  translate: -70% -50% ;
+}
+
+.header__cart-text {
+  font-family: var(--font-source-sans-pro);
+  line-height: 18px;
+  color: var(--black);
+}
+
+
+.header__cart-btn {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  translate: -50% -50%;
+}
+
+.header__cart-img {
+  width: 18px;
+  height: 18px;
+}
+
+.header__cart-box {
+  width: 12px;
+  height: 12px;
+  background-color: var(--red);
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  translate: -30% -90%;
+  border-radius: var(--br-81xl);
+}
+
+.header__cart-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  font-size: 8px;
+  line-height: 12px;
+  color: var(--gray-scale-white);
+}
+
+/*main page*/
