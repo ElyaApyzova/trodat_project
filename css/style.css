@@ -1621,13 +1621,54 @@
 
 .catalog__sizes {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
-.catalog__minus {
-  font-size: 15px;
-  color: var(--red);
+.catalog__sizes-box {
+  border: 1px solid var(--red);
+  padding: 10px 32px;
+  border-radius: var(--br-81xl);
 }
+
+.catalog__sizes-numbers {
+  color: var(--black);
+}
+
+.catalog__minus {
+  width: 10px;
+}
+
+
+
+.catalog__category-check {
+  padding: 0px 20px;
+}
+
+.catalog__category-title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 31px;
+}
+
+.catalog__choose:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+#category {
+  appearance: none;
+  border: 1px solid #686868;
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#category:checked:before{
+  content:'\2713'; background:blue; width:100%; height:100%; top:0;
+ left:0;
+  display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; }
 
 
 
