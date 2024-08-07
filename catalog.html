@@ -68,7 +68,6 @@
         <section class="catalog">
         <div class="container">
         <h1 class="catalog__title">Каталог Trodat</h1>
-        <span class="catalog__line"></span>
         <div class="catalog__box">
         <div class="catalog__sorts">
             <img class="catalog__sorts-img" src="./images/filter-img.png" alt="">
@@ -76,7 +75,11 @@
         </div>
         <div class="catalog__search">
             <img class="catalog__search-img" src="./images/search_icon.png" alt="">
-            <p class="catalog__search-text">Искать товар...</p>
+            <input class="catalog__search-text"
+            type="search"
+            id="mySearch"
+            name=""
+            placeholder="Искать товар..." />
         </div>
         </div>
 
@@ -89,8 +92,8 @@
              <p class="catalog__price">250 с.</p>
              <p class="catalog__price">4500 с.</p>
              </div>
-             <span class="catalog__line"></span>
-             <span class="catalog__line"></span>
+             <div class="catalog__lines"></div>
+             <div class="catalog__line"></div>
             </div>
              <div class="catalog__category">
              <p class="catalog__category-text">По диаметру (круглые штампы)</p>
@@ -98,8 +101,8 @@
              <p class="catalog__price">20 мм.</p>
              <p class="catalog__price">100 мм.</p>
              </div>
-             <span class="catalog__lines"></span>
-             <span class="catalog__line"></span>
+             <div class="catalog__lines"></div>
+             <div class="catalog__line"></div>
             </div>
 
             <div class="catalog__category">
@@ -175,6 +178,8 @@
             </div>
             </div>
          </div>
+
+
          <div class="catalog__cards">
           <div class="catalog__cards-box">
           <div class="catalog__cards-like">
@@ -453,7 +458,9 @@
             12</p>
           <img class="arrow" src="./images/arrow-next.png" alt="">
         </div>
-
+      </div>
+    </section>
+  </main>
         <footer class="footer">
           <div class="container inner__footer">
             <div class="footer__contents">
@@ -553,8 +560,5 @@
             <p class="footer__down-text">Trodat © 2023. All Rights Reserved</p>
           </div>
         </footer>
-        </div>
-        </section>
-      </main>
 </body>
 </html>
