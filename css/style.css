@@ -1590,29 +1590,43 @@
 }
 
 
-.catalog__red-lines::before {
+.catalog__lines::before {
   content: "";
+  position: absolute;
   background: var(--red);
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
+  translate: -50% -50%;
 }
 
 .catalog__red-lines::after {
   content: "";
+  position: absolute;
+  left: 100%;
   background: var(--red);
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
+  translate: -50% -50%;
 }
 
 
 
-
+.catalog__category-sizes {
+  padding: 0px 20px;
+  margin-bottom: 25px;
+}
 
 
 .catalog__sizes {
   display: flex;
+  gap: 10px;
+}
+
+.catalog__minus {
+  font-size: 15px;
+  color: var(--red);
 }
 
 
