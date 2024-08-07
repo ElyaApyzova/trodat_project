@@ -1555,6 +1555,8 @@
 
 .catalog__category {
   margin-bottom: 53px;
+  padding: 0px 20px 20px;
+  border-bottom: 1px solid #F1F1F1;;
 }
 
 .catalog__category-text {
@@ -1569,10 +1571,48 @@
 
 .catalog__price {
   color: var(--black);
+  margin-bottom: 10px;
 }
 
 .catalog__lines {
+  position: relative;
   border: 3px solid #F1F1F1;
+  width: 100%;
+  max-width: 238px;
+}
+
+.catalog__red-lines {
+   position: absolute;
+   border: 3px solid var(--red);
+  width: 100%;
+  max-width: 166px;
+  translate: -0% -50%;
+}
+
+
+.catalog__red-lines::before {
+  content: "";
+  background: var(--red);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.catalog__red-lines::after {
+  content: "";
+  background: var(--red);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+.catalog__sizes {
+  display: flex;
 }
 
 
