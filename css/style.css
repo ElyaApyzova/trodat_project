@@ -1910,7 +1910,25 @@
 }
 
 .footer__down {
+  display: flex;
   
+  padding-bottom: 22px;
+}
+
+.footer__down-logo {
+  width: 100%;
+  max-width: 94px;
+  height: 100%;
+  max-height: 30px;
+  margin-right: 410px;
+}
+
+.footer__down-text {
+  font-family: var(--body-2);
+  font-size: 13px;
+  line-height: 19px;
+  color: #808080;
+  padding-top: 22px;
 }
 
 
