@@ -1356,8 +1356,8 @@
 
 .menu__btn {
   display: none;
-  width: 26px;
-  height: 16px;
+  width: 27px;
+  height: 27px;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -1382,8 +1382,12 @@
 }
 
 .logo__img {
-  width: 131px;
-  
+  width: 100%;
+  max-width: 131px;
+}
+
+.logo__mobile-img {
+  display: none;
 }
 
 .menu__list {
@@ -1824,7 +1828,7 @@
   justify-content: space-between;
 }
 
-.logo__img {
+.footer__logo-img {
   width: 100%;
   max-width: 124px;
   margin-bottom: 30px;
