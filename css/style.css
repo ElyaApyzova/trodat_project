@@ -1811,3 +1811,106 @@
 }
 
 
+.footer__wrapper {
+  background: #353945;
+}
+
+.footer {
+  padding: 80px 0px 100px;
+}
+
+.inner__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo__img {
+  width: 100%;
+  max-width: 124px;
+  margin-bottom: 30px;
+}
+
+.footer__description {
+  font-family: 'Core Sans C', sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  color: #B7B7B7;
+  width: 100%;
+  max-width: 321px;
+  margin-bottom: 35px;
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer__numbers {
+  padding: 5px;
+  background: #1A1A1A;
+  box-shadow: 0px 0px 1.41px 0px #B52020;
+}
+
+.footer__numbers-text {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: var(--gray-scale-white);
+}
+
+.footer__or {
+  font-family: var(--body-2);
+  font-size: 15px;
+  line-height: 22px;
+  color: #A6A6A6;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 130px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.menu__list-title {
+  font-family: 'Core Sans C', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--gray-scale-white);
+  margin-bottom: 7px;
+}
+
+.menu__list-link {
+  font-family: 'Core Sans C', sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  color: #999999;
+}
+
+.menu__list-link:hover {
+  cursor: pointer;
+  color: var(--gray-scale-white);
+}
+
+
+
+
+
+
+
+.footer__down-wrapper {
+  background: #272B38;
+  box-shadow: 0px -0.94px 0px 0px #333333;
+}
+
+.footer__down {
+  
+}
+
+
