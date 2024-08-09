@@ -1,592 +1,1169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/mediaquery.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM Sans:wght@700&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;600&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500&amp;display=swap">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/mediaquery.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@700&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;600&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&amp;display=swap"
+    />
     <title>Catalog</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container inner__header">
-          <a class="header__logo" href="#">
-            <img class="logo__mobile-img" src="./images/mobile-logo.png" alt="" />
-            <img class="logo__img" src="./images/trodat_logo.png" alt="" />
-          </a>
-          <nav class="menu header__menu">
-            <div class="menu__btn">
-              <img class="menu__btn-img" src="./images/menu_btn.png" alt="">
+      <div class="container inner__header">
+        <a class="header__logo" href="#">
+          <img class="logo__mobile-img" src="./images/mobile-logo.png" alt="" />
+          <img class="logo__img" src="./images/trodat_logo.png" alt="" />
+        </a>
+        <nav class="menu header__menu">
+          <div class="menu__btn">
+            <img class="menu__btn-img" src="./images/menu_btn.png" alt="" />
+          </div>
+          <ul class="menu__list header__menu-list">
+            <li class="menu__list__item">
+              <a class="menu__list__link" href="#">Главная</a>
+            </li>
+            <li class="menu__list__item">
+              <a class="menu__list__link" href="#">Каталог</a>
+            </li>
+            <li class="menu__list__item">
+              <a class="menu__list__link" href="#">О компании</a>
+            </li>
+            <li class="menu__list__item">
+              <a class="menu__list__link" href="#">Акции</a>
+            </li>
+            <li class="menu__list__item">
+              <a class="menu__list__link" href="#">Новости</a>
+            </li>
+            <li class="menu__list__item">
+              <a class="menu__list__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__items">
+          <div class="header__search">
+            <img
+              class="header__search-img"
+              src="./images/search_icon.png"
+              alt=""
+            />
+          </div>
+          <div class="header__user">
+            <img class="header__user-img" src="./images/user_icon.png" alt="" />
+          </div>
+          <div class="header__cart">
+            <div class="header__cart-description">
+              <p class="header__cart-text">корзина</p>
             </div>
-            <ul class="menu__list header__menu-list">
-              <li class="menu__list__item">
-                <a class="menu__list__link" href="#">Главная</a>
-              </li>
-              <li class="menu__list__item">
-                <a class="menu__list__link" href="#">Каталог</a>
-              </li>
-              <li class="menu__list__item">
-                <a class="menu__list__link" href="#">О компании</a>
-              </li>
-              <li class="menu__list__item">
-                <a class="menu__list__link" href="#">Акции</a>
-              </li>
-              <li class="menu__list__item">
-                <a class="menu__list__link" href="#">Новости</a>
-              </li>
-              <li class="menu__list__item">
-                <a class="menu__list__link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__items">
-            <div class="header__search">
-                <img class="header__search-img" src="./images/search_icon.png" alt="">
-            </div>
-            <div class="header__user">
-                <img class="header__user-img" src="./images/user_icon.png" alt="">
-            </div>
-            <div class="header__cart">
-                <div class="header__cart-description">
-                    <p class="header__cart-text">корзина</p>
-                </div>
-                <div class="header__cart-btn">
-                <img class="header__cart-img" src="./images/cart_icon.png" alt="">
-                <div class="header__cart-box">
+            <div class="header__cart-btn">
+              <img
+                class="header__cart-img"
+                src="./images/cart_icon.png"
+                alt=""
+              />
+              <div class="header__cart-box">
                 <span class="header__cart-number">5</span>
-            </div>
-            </div>
+              </div>
             </div>
           </div>
         </div>
-      </header> 
-      <main>
-        <section class="catalog">
+      </div>
+    </header>
+    <main>
+      <section class="catalog">
         <div class="container">
-        <h1 class="catalog__title">Каталог Trodat</h1>
-        <div class="catalog__box">
-        <div class="catalog__sorts">
-            <img class="catalog__sorts-img" src="./images/filter-img.png" alt="">
-            <p class="catalog__sorts-text">Сортировка</p>
-        </div>
-        <div class="catalog__search">
-            <img class="catalog__search-img" src="./images/search_icon.png" alt="">
-            <input class="catalog__search-text"
-            type="search"
-            id="mySearch"
-            name=""
-            placeholder="Искать товар..." />
-        </div>
-        </div>
-
-        <div class="catalog__mobile-box">
-          <div class="catalog__mobile-sorts">
-            <p class="catalog__sorts-text">Категории</p>
-              <img class="catalog__sorts-img" src="./images/arrow-right.png" alt="">
-          </div>
-          <div class="catalog__mobile-sorts">
-            <img class="catalog__sorts-img" src="./images/filter-img.png" alt="">
-            <p class="catalog__sorts-text">Сортировка</p>
-          </div>
-          </div>
-
-
-        <div class="catalog__catagories">
-         <div class="catalog__infos">
-          <div class="catalog__catagories-content">
-            <div class="catalog__category">
-             <p class="catalog__category-text">По ценам</p>
-             <div class="catalog__prices">
-             <p class="catalog__price">250 с.</p>
-             <p class="catalog__price">4500 с.</p>
-             </div>
-             <div class="catalog__lines">
-             <div class="catalog__red-lines"></div>
+          <h1 class="catalog__title">Каталог Trodat</h1>
+          <div class="catalog__box">
+            <div class="catalog__sorts">
+              <img
+                class="catalog__sorts-img"
+                src="./images/filter-img.png"
+                alt=""
+              />
+              <p class="catalog__sorts-text">Сортировка</p>
             </div>
-            </div>
-             <div class="catalog__category">
-             <p class="catalog__category-text">По диаметру (круглые штампы)</p>
-             <div class="catalog__prices">
-             <p class="catalog__price">20 мм.</p>
-             <p class="catalog__price">100 мм.</p>
-             </div>
-             <div class="catalog__lines">
-             <div class="catalog__red-lines"></div>
-            </div>
-            </div>
-
-            <div class="catalog__category-sizes">
-             <p class="catalog__category-text">По размеру (прямоугольные штампы)</p>
-             <div class="catalog__sizes">
-            <div class="catalog__sizes-box">
-             <p class="catalog__sizes-numbers">40 мм</p>
-            </div>
-             <img class="catalog__minus" src="./images/minus-img.png" alt="">
-             <div class="catalog__sizes-box"> 
-             <p class="catalog__sizes-numbers">80 мм</p>
-            </div>
-             </div>
-            </div>
-          </div>
-            <div class="catalog__category-check">
-             <h3 class="catalog__category-title">Категории</h3>
-             <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Круглые печати">
-             <label for="category" class="catalog__text">Круглые печати</label>
-            </div>
-             <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Прямоугольные печати">
-             <label for="category" class="catalog__text">Прямоугольные печати</label>
-            </div>
-            <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Рельефные печати">
-             <label for="category" class="catalog__text">Рельефные печати</label>
-            </div>
-            <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Квадратные штампы">
-             <label for="category" class="catalog__text">Квадратные штампы</label>
-            </div>
-            <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Нумераторы">
-             <label for="category" class="catalog__text">Нумераторы</label>
-            </div>
-            <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Карманные штампы">
-             <label for="category" class="catalog__text">Карманные штампы</label>
-            </div>
-            <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Датеры">
-             <label for="category" class="catalog__text">Датеры</label>
-            </div>
-            <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Овальные печати">
-             <label for="category" class="catalog__text">Овальные печати</label>
-            </div>
-            <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Серия оснасток Professional">
-             <label for="category" class="catalog__text">Серия оснасток Professional</label>
-            </div>
-            <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Самонаборные печати и штампы">
-             <label for="category" class="catalog__text">Самонаборные печати и штампы</label>
-            </div>
-            <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Сургучная печать">
-             <label for="category" class="catalog__text">Сургучная печать</label>
-            </div>
-            <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Штемпельные подушки">
-             <label for="category" class="catalog__text">Штемпельные подушки</label>
-            </div>
-            <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Краска для штампов и печатей">
-             <label for="category" class="catalog__text">Краска для штампов и печатей</label>
-            </div>
-            <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Расходные материалы">
-             <label for="category" class="catalog__text">Расходные материалы</label>
-            </div>
-            <div class="catalog__choose">
-             <input type="checkbox" id="category" name="category" value="Авторучки со штампом Goldring">
-             <label for="category" class="catalog__text">Авторучки со штампом Goldring</label>
-            </div>
-            </div>
-         </div>
-        
-
-
-         <div class="catalog__cards">
-          <div class="catalog__cards-box">
-          <div class="catalog__cards-like">
-          <p class="catalog__cards-numbers">5200</p>
-          <img class="catalog__cards-heart" src="./images/heart-img.png" alt="">
-          </div>
-          <img class="catalog__cards-img" src="./images/cards-img.png" alt="">
-          <p class="catalog__cards-text">Рельефная печать</p>
-          <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
-          <div class="catalog__cards-colours">
-          <img class="catalog__colours" src="./images/Ellipse -grey.png" alt="">
-          <img class="catalog__colours" src="./images/Ellipse -orange.png" alt="">
-          <img class="catalog__colours" src="./images/Ellipse -green.png" alt="">
-          <img class="catalog__colours" src="./images/Ellipse -black.png" alt="">
-          <img class="catalog__colours" src="./images/Ellipse -blue.png" alt="">
-          <img class="catalog__colours" src="./images/Ellipse -brown.png" alt="">
-          </div>
-          <div class="catalog__cards-prices">
-            <p class="catalog__cards-price">3500 с.</p>
-            <img class="catalog__cards-cart" src="./images/cart-img.png" alt="">
+            <div class="catalog__search">
+              <img
+                class="catalog__search-img"
+                src="./images/search_icon.png"
+                alt=""
+              />
+              <input
+                class="catalog__search-text"
+                type="search"
+                id="mySearch"
+                name=""
+                placeholder="Искать товар..."
+              />
             </div>
           </div>
 
-          <div class="catalog__cards-box">
-            <div class="catalog__cards-like">
-            <p class="catalog__cards-numbers">5200</p>
-            <img class="catalog__cards-heart" src="./images/heart-img.png" alt="">
+          <div class="catalog__mobile-box">
+            <div class="catalog__mobile-sorts">
+              <p class="catalog__sorts-text">Категории</p>
+              <img
+                class="catalog__sorts-img"
+                src="./images/arrow-right.png"
+                alt=""
+              />
             </div>
-            <img class="catalog__cards-img" src="./images/cards-img.png" alt="">
-            <p class="catalog__cards-text">Рельефная печать</p>
-            <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
-            <div class="catalog__cards-colours">
-            <img class="catalog__colours" src="./images/Ellipse -grey.png" alt="">
-            <img class="catalog__colours" src="./images/Ellipse -orange.png" alt="">
-            <img class="catalog__colours" src="./images/Ellipse -green.png" alt="">
-            <img class="catalog__colours" src="./images/Ellipse -black.png" alt="">
-            <img class="catalog__colours" src="./images/Ellipse -blue.png" alt="">
-            <img class="catalog__colours" src="./images/Ellipse -brown.png" alt="">
+            <div class="catalog__mobile-sorts">
+              <img
+                class="catalog__sorts-img"
+                src="./images/filter-img.png"
+                alt=""
+              />
+              <p class="catalog__sorts-text">Сортировка</p>
             </div>
-            <div class="catalog__cards-prices">
-              <p class="catalog__cards-price">3500 с.</p>
-              <img class="catalog__cards-cart" src="./images/cart-img.png" alt="">
+          </div>
+
+          <div class="catalog__catagories">
+            <div class="catalog__infos">
+              <div class="catalog__catagories-content">
+                <div class="catalog__category">
+                  <p class="catalog__category-text">По ценам</p>
+                  <div class="catalog__prices">
+                    <p class="catalog__price">250 с.</p>
+                    <p class="catalog__price">4500 с.</p>
+                  </div>
+                  <div class="catalog__lines">
+                    <div class="catalog__red-lines"></div>
+                  </div>
+                </div>
+                <div class="catalog__category">
+                  <p class="catalog__category-text">
+                    По диаметру (круглые штампы)
+                  </p>
+                  <div class="catalog__prices">
+                    <p class="catalog__price">20 мм.</p>
+                    <p class="catalog__price">100 мм.</p>
+                  </div>
+                  <div class="catalog__lines">
+                    <div class="catalog__red-lines"></div>
+                  </div>
+                </div>
+
+                <div class="catalog__category-sizes">
+                  <p class="catalog__category-text">
+                    По размеру (прямоугольные штампы)
+                  </p>
+                  <div class="catalog__sizes">
+                    <div class="catalog__sizes-box">
+                      <p class="catalog__sizes-numbers">40 мм</p>
+                    </div>
+                    <img
+                      class="catalog__minus"
+                      src="./images/minus-img.png"
+                      alt=""
+                    />
+                    <div class="catalog__sizes-box">
+                      <p class="catalog__sizes-numbers">80 мм</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__category-check">
+                <h3 class="catalog__category-title">Категории</h3>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Круглые печати"
+                  />
+                  <label for="category" class="catalog__text"
+                    >Круглые печати</label
+                  >
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Прямоугольные печати"
+                  />
+                  <label for="category" class="catalog__text"
+                    >Прямоугольные печати</label
+                  >
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Рельефные печати"
+                  />
+                  <label for="category" class="catalog__text"
+                    >Рельефные печати</label
+                  >
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Квадратные штампы"
+                  />
+                  <label for="category" class="catalog__text"
+                    >Квадратные штампы</label
+                  >
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Нумераторы"
+                  />
+                  <label for="category" class="catalog__text">Нумераторы</label>
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Карманные штампы"
+                  />
+                  <label for="category" class="catalog__text"
+                    >Карманные штампы</label
+                  >
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Датеры"
+                  />
+                  <label for="category" class="catalog__text">Датеры</label>
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Овальные печати"
+                  />
+                  <label for="category" class="catalog__text"
+                    >Овальные печати</label
+                  >
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Серия оснасток Professional"
+                  />
+                  <label for="category" class="catalog__text"
+                    >Серия оснасток Professional</label
+                  >
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Самонаборные печати и штампы"
+                  />
+                  <label for="category" class="catalog__text"
+                    >Самонаборные печати и штампы</label
+                  >
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Сургучная печать"
+                  />
+                  <label for="category" class="catalog__text"
+                    >Сургучная печать</label
+                  >
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Штемпельные подушки"
+                  />
+                  <label for="category" class="catalog__text"
+                    >Штемпельные подушки</label
+                  >
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Краска для штампов и печатей"
+                  />
+                  <label for="category" class="catalog__text"
+                    >Краска для штампов и печатей</label
+                  >
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Расходные материалы"
+                  />
+                  <label for="category" class="catalog__text"
+                    >Расходные материалы</label
+                  >
+                </div>
+                <div class="catalog__choose">
+                  <input
+                    type="checkbox"
+                    id="category"
+                    name="category"
+                    value="Авторучки со штампом Goldring"
+                  />
+                  <label for="category" class="catalog__text"
+                    >Авторучки со штампом Goldring</label
+                  >
+                </div>
               </div>
             </div>
 
-            <div class="catalog__cards-box">
-              <div class="catalog__cards-like">
-              <p class="catalog__cards-numbers">5200</p>
-              <img class="catalog__cards-heart" src="./images/heart-img.png" alt="">
-              </div>
-              <img class="catalog__cards-img" src="./images/cards-img.png" alt="">
-              <p class="catalog__cards-text">Рельефная печать</p>
-              <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
-              <div class="catalog__cards-colours">
-              <img class="catalog__colours" src="./images/Ellipse -grey.png" alt="">
-              <img class="catalog__colours" src="./images/Ellipse -orange.png" alt="">
-              <img class="catalog__colours" src="./images/Ellipse -green.png" alt="">
-              <img class="catalog__colours" src="./images/Ellipse -black.png" alt="">
-              <img class="catalog__colours" src="./images/Ellipse -blue.png" alt="">
-              <img class="catalog__colours" src="./images/Ellipse -brown.png" alt="">
-              </div>
-              <div class="catalog__cards-prices">
-                <p class="catalog__cards-price">3500 с.</p>
-                <img class="catalog__cards-cart" src="./images/cart-img.png" alt="">
+            <div class="catalog__cards">
+              <div class="catalog__cards-box">
+                <div class="catalog__cards-like">
+                  <p class="catalog__cards-numbers">5200</p>
+                  <img
+                    class="catalog__cards-heart"
+                    src="./images/heart-img.png"
+                    alt=""
+                  />
+                </div>
+                <img
+                  class="catalog__cards-img"
+                  src="./images/cards-img.png"
+                  alt=""
+                />
+                <p class="catalog__cards-text">Рельефная печать</p>
+                <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
+                <div class="catalog__cards-colours">
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -grey.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -orange.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -green.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -black.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -blue.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -brown.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog__cards-prices">
+                  <p class="catalog__cards-price">3500 с.</p>
+                  <img
+                    class="catalog__cards-cart"
+                    src="./images/cart-img.png"
+                    alt=""
+                  />
                 </div>
               </div>
 
               <div class="catalog__cards-box">
                 <div class="catalog__cards-like">
-                <p class="catalog__cards-numbers">5200</p>
-                <img class="catalog__cards-heart" src="./images/heart-img.png" alt="">
+                  <p class="catalog__cards-numbers">5200</p>
+                  <img
+                    class="catalog__cards-heart"
+                    src="./images/heart-img.png"
+                    alt=""
+                  />
                 </div>
-                <img class="catalog__cards-img" src="./images/cards-img.png" alt="">
+                <img
+                  class="catalog__cards-img"
+                  src="./images/cards-img.png"
+                  alt=""
+                />
                 <p class="catalog__cards-text">Рельефная печать</p>
                 <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
                 <div class="catalog__cards-colours">
-                <img class="catalog__colours" src="./images/Ellipse -grey.png" alt="">
-                <img class="catalog__colours" src="./images/Ellipse -orange.png" alt="">
-                <img class="catalog__colours" src="./images/Ellipse -green.png" alt="">
-                <img class="catalog__colours" src="./images/Ellipse -black.png" alt="">
-                <img class="catalog__colours" src="./images/Ellipse -blue.png" alt="">
-                <img class="catalog__colours" src="./images/Ellipse -brown.png" alt="">
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -grey.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -orange.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -green.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -black.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -blue.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -brown.png"
+                    alt=""
+                  />
                 </div>
                 <div class="catalog__cards-prices">
                   <p class="catalog__cards-price">3500 с.</p>
-                  <img class="catalog__cards-cart" src="./images/cart-img.png" alt="">
-                  </div>
+                  <img
+                    class="catalog__cards-cart"
+                    src="./images/cart-img.png"
+                    alt=""
+                  />
                 </div>
+              </div>
 
-                <div class="catalog__cards-box">
-                  <div class="catalog__cards-like">
+              <div class="catalog__cards-box">
+                <div class="catalog__cards-like">
                   <p class="catalog__cards-numbers">5200</p>
-                  <img class="catalog__cards-heart" src="./images/heart-img.png" alt="">
-                  </div>
-                  <img class="catalog__cards-img" src="./images/cards-img.png" alt="">
-                  <p class="catalog__cards-text">Рельефная печать</p>
-                  <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
-                  <div class="catalog__cards-colours">
-                  <img class="catalog__colours" src="./images/Ellipse -grey.png" alt="">
-                  <img class="catalog__colours" src="./images/Ellipse -orange.png" alt="">
-                  <img class="catalog__colours" src="./images/Ellipse -green.png" alt="">
-                  <img class="catalog__colours" src="./images/Ellipse -black.png" alt="">
-                  <img class="catalog__colours" src="./images/Ellipse -blue.png" alt="">
-                  <img class="catalog__colours" src="./images/Ellipse -brown.png" alt="">
-                  </div>
-                  <div class="catalog__cards-prices">
-                    <p class="catalog__cards-price">3500 с.</p>
-                    <img class="catalog__cards-cart" src="./images/cart-img.png" alt="">
-                    </div>
-                  </div>
+                  <img
+                    class="catalog__cards-heart"
+                    src="./images/heart-img.png"
+                    alt=""
+                  />
+                </div>
+                <img
+                  class="catalog__cards-img"
+                  src="./images/cards-img.png"
+                  alt=""
+                />
+                <p class="catalog__cards-text">Рельефная печать</p>
+                <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
+                <div class="catalog__cards-colours">
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -grey.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -orange.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -green.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -black.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -blue.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -brown.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog__cards-prices">
+                  <p class="catalog__cards-price">3500 с.</p>
+                  <img
+                    class="catalog__cards-cart"
+                    src="./images/cart-img.png"
+                    alt=""
+                  />
+                </div>
+              </div>
 
-                  <div class="catalog__cards-box">
-                    <div class="catalog__cards-like">
-                    <p class="catalog__cards-numbers">5200</p>
-                    <img class="catalog__cards-heart" src="./images/heart-img.png" alt="">
-                    </div>
-                    <img class="catalog__cards-img" src="./images/cards-img.png" alt="">
-                    <p class="catalog__cards-text">Рельефная печать</p>
-                    <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
-                    <div class="catalog__cards-colours">
-                    <img class="catalog__colours" src="./images/Ellipse -grey.png" alt="">
-                    <img class="catalog__colours" src="./images/Ellipse -orange.png" alt="">
-                    <img class="catalog__colours" src="./images/Ellipse -green.png" alt="">
-                    <img class="catalog__colours" src="./images/Ellipse -black.png" alt="">
-                    <img class="catalog__colours" src="./images/Ellipse -blue.png" alt="">
-                    <img class="catalog__colours" src="./images/Ellipse -brown.png" alt="">
-                    </div>
-                    <div class="catalog__cards-prices">
-                      <p class="catalog__cards-price">3500 с.</p>
-                      <img class="catalog__cards-cart" src="./images/cart-img.png" alt="">
-                      </div>
-                    </div>
+              <div class="catalog__cards-box">
+                <div class="catalog__cards-like">
+                  <p class="catalog__cards-numbers">5200</p>
+                  <img
+                    class="catalog__cards-heart"
+                    src="./images/heart-img.png"
+                    alt=""
+                  />
+                </div>
+                <img
+                  class="catalog__cards-img"
+                  src="./images/cards-img.png"
+                  alt=""
+                />
+                <p class="catalog__cards-text">Рельефная печать</p>
+                <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
+                <div class="catalog__cards-colours">
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -grey.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -orange.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -green.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -black.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -blue.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -brown.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog__cards-prices">
+                  <p class="catalog__cards-price">3500 с.</p>
+                  <img
+                    class="catalog__cards-cart"
+                    src="./images/cart-img.png"
+                    alt=""
+                  />
+                </div>
+              </div>
 
-                    <div class="catalog__cards-box">
-                      <div class="catalog__cards-like">
-                      <p class="catalog__cards-numbers">5200</p>
-                      <img class="catalog__cards-heart" src="./images/heart-img.png" alt="">
-                      </div>
-                      <img class="catalog__cards-img" src="./images/cards-img.png" alt="">
-                      <p class="catalog__cards-text">Рельефная печать</p>
-                      <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
-                      <div class="catalog__cards-colours">
-                      <img class="catalog__colours" src="./images/Ellipse -grey.png" alt="">
-                      <img class="catalog__colours" src="./images/Ellipse -orange.png" alt="">
-                      <img class="catalog__colours" src="./images/Ellipse -green.png" alt="">
-                      <img class="catalog__colours" src="./images/Ellipse -black.png" alt="">
-                      <img class="catalog__colours" src="./images/Ellipse -blue.png" alt="">
-                      <img class="catalog__colours" src="./images/Ellipse -brown.png" alt="">
-                      </div>
-                      <div class="catalog__cards-prices">
-                        <p class="catalog__cards-price">3500 с.</p>
-                        <img class="catalog__cards-cart" src="./images/cart-img.png" alt="">
-                        </div>
-                      </div>
+              <div class="catalog__cards-box">
+                <div class="catalog__cards-like">
+                  <p class="catalog__cards-numbers">5200</p>
+                  <img
+                    class="catalog__cards-heart"
+                    src="./images/heart-img.png"
+                    alt=""
+                  />
+                </div>
+                <img
+                  class="catalog__cards-img"
+                  src="./images/cards-img.png"
+                  alt=""
+                />
+                <p class="catalog__cards-text">Рельефная печать</p>
+                <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
+                <div class="catalog__cards-colours">
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -grey.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -orange.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -green.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -black.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -blue.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -brown.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog__cards-prices">
+                  <p class="catalog__cards-price">3500 с.</p>
+                  <img
+                    class="catalog__cards-cart"
+                    src="./images/cart-img.png"
+                    alt=""
+                  />
+                </div>
+              </div>
 
-                      <div class="catalog__cards-box">
-                        <div class="catalog__cards-like">
-                        <p class="catalog__cards-numbers">5200</p>
-                        <img class="catalog__cards-heart" src="./images/heart-img.png" alt="">
-                        </div>
-                        <img class="catalog__cards-img" src="./images/cards-img.png" alt="">
-                        <p class="catalog__cards-text">Рельефная печать</p>
-                        <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
-                        <div class="catalog__cards-colours">
-                        <img class="catalog__colours" src="./images/Ellipse -grey.png" alt="">
-                        <img class="catalog__colours" src="./images/Ellipse -orange.png" alt="">
-                        <img class="catalog__colours" src="./images/Ellipse -green.png" alt="">
-                        <img class="catalog__colours" src="./images/Ellipse -black.png" alt="">
-                        <img class="catalog__colours" src="./images/Ellipse -blue.png" alt="">
-                        <img class="catalog__colours" src="./images/Ellipse -brown.png" alt="">
-                        </div>
-                        <div class="catalog__cards-prices">
-                          <p class="catalog__cards-price">3500 с.</p>
-                          <img class="catalog__cards-cart" src="./images/cart-img.png" alt="">
-                          </div>
-                        </div>
+              <div class="catalog__cards-box">
+                <div class="catalog__cards-like">
+                  <p class="catalog__cards-numbers">5200</p>
+                  <img
+                    class="catalog__cards-heart"
+                    src="./images/heart-img.png"
+                    alt=""
+                  />
+                </div>
+                <img
+                  class="catalog__cards-img"
+                  src="./images/cards-img.png"
+                  alt=""
+                />
+                <p class="catalog__cards-text">Рельефная печать</p>
+                <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
+                <div class="catalog__cards-colours">
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -grey.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -orange.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -green.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -black.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -blue.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -brown.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog__cards-prices">
+                  <p class="catalog__cards-price">3500 с.</p>
+                  <img
+                    class="catalog__cards-cart"
+                    src="./images/cart-img.png"
+                    alt=""
+                  />
+                </div>
+              </div>
 
-                        <div class="catalog__cards-box">
-                          <div class="catalog__cards-like">
-                          <p class="catalog__cards-numbers">5200</p>
-                          <img class="catalog__cards-heart" src="./images/heart-img.png" alt="">
-                          </div>
-                          <img class="catalog__cards-img" src="./images/cards-img.png" alt="">
-                          <p class="catalog__cards-text">Рельефная печать</p>
-                          <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
-                          <div class="catalog__cards-colours">
-                          <img class="catalog__colours" src="./images/Ellipse -grey.png" alt="">
-                          <img class="catalog__colours" src="./images/Ellipse -orange.png" alt="">
-                          <img class="catalog__colours" src="./images/Ellipse -green.png" alt="">
-                          <img class="catalog__colours" src="./images/Ellipse -black.png" alt="">
-                          <img class="catalog__colours" src="./images/Ellipse -blue.png" alt="">
-                          <img class="catalog__colours" src="./images/Ellipse -brown.png" alt="">
-                          </div>
-                          <div class="catalog__cards-prices">
-                            <p class="catalog__cards-price">3500 с.</p>
-                            <img class="catalog__cards-cart" src="./images/cart-img.png" alt="">
-                            </div>
-                          </div>
+              <div class="catalog__cards-box">
+                <div class="catalog__cards-like">
+                  <p class="catalog__cards-numbers">5200</p>
+                  <img
+                    class="catalog__cards-heart"
+                    src="./images/heart-img.png"
+                    alt=""
+                  />
+                </div>
+                <img
+                  class="catalog__cards-img"
+                  src="./images/cards-img.png"
+                  alt=""
+                />
+                <p class="catalog__cards-text">Рельефная печать</p>
+                <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
+                <div class="catalog__cards-colours">
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -grey.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -orange.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -green.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -black.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -blue.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -brown.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog__cards-prices">
+                  <p class="catalog__cards-price">3500 с.</p>
+                  <img
+                    class="catalog__cards-cart"
+                    src="./images/cart-img.png"
+                    alt=""
+                  />
+                </div>
+              </div>
 
-                          <div class="catalog__cards-box">
-                            <div class="catalog__cards-like">
-                            <p class="catalog__cards-numbers">5200</p>
-                            <img class="catalog__cards-heart" src="./images/heart-img.png" alt="">
-                            </div>
-                            <img class="catalog__cards-img" src="./images/cards-img.png" alt="">
-                            <p class="catalog__cards-text">Рельефная печать</p>
-                            <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
-                            <div class="catalog__cards-colours">
-                            <img class="catalog__colours" src="./images/Ellipse -grey.png" alt="">
-                            <img class="catalog__colours" src="./images/Ellipse -orange.png" alt="">
-                            <img class="catalog__colours" src="./images/Ellipse -green.png" alt="">
-                            <img class="catalog__colours" src="./images/Ellipse -black.png" alt="">
-                            <img class="catalog__colours" src="./images/Ellipse -blue.png" alt="">
-                            <img class="catalog__colours" src="./images/Ellipse -brown.png" alt="">
-                            </div>
-                            <div class="catalog__cards-prices">
-                              <p class="catalog__cards-price">3500 с.</p>
-                              <img class="catalog__cards-cart" src="./images/cart-img.png" alt="">
-                              </div>
-                            </div>
+              <div class="catalog__cards-box">
+                <div class="catalog__cards-like">
+                  <p class="catalog__cards-numbers">5200</p>
+                  <img
+                    class="catalog__cards-heart"
+                    src="./images/heart-img.png"
+                    alt=""
+                  />
+                </div>
+                <img
+                  class="catalog__cards-img"
+                  src="./images/cards-img.png"
+                  alt=""
+                />
+                <p class="catalog__cards-text">Рельефная печать</p>
+                <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
+                <div class="catalog__cards-colours">
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -grey.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -orange.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -green.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -black.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -blue.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -brown.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog__cards-prices">
+                  <p class="catalog__cards-price">3500 с.</p>
+                  <img
+                    class="catalog__cards-cart"
+                    src="./images/cart-img.png"
+                    alt=""
+                  />
+                </div>
+              </div>
 
-                            <div class="catalog__cards-box">
-                              <div class="catalog__cards-like">
-                              <p class="catalog__cards-numbers">5200</p>
-                              <img class="catalog__cards-heart" src="./images/heart-img.png" alt="">
-                              </div>
-                              <img class="catalog__cards-img" src="./images/cards-img.png" alt="">
-                              <p class="catalog__cards-text">Рельефная печать</p>
-                              <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
-                              <div class="catalog__cards-colours">
-                              <img class="catalog__colours" src="./images/Ellipse -grey.png" alt="">
-                              <img class="catalog__colours" src="./images/Ellipse -orange.png" alt="">
-                              <img class="catalog__colours" src="./images/Ellipse -green.png" alt="">
-                              <img class="catalog__colours" src="./images/Ellipse -black.png" alt="">
-                              <img class="catalog__colours" src="./images/Ellipse -blue.png" alt="">
-                              <img class="catalog__colours" src="./images/Ellipse -brown.png" alt="">
-                              </div>
-                              <div class="catalog__cards-prices">
-                                <p class="catalog__cards-price">3500 с.</p>
-                                <img class="catalog__cards-cart" src="./images/cart-img.png" alt="">
-                                </div>
-                              </div>
+              <div class="catalog__cards-box">
+                <div class="catalog__cards-like">
+                  <p class="catalog__cards-numbers">5200</p>
+                  <img
+                    class="catalog__cards-heart"
+                    src="./images/heart-img.png"
+                    alt=""
+                  />
+                </div>
+                <img
+                  class="catalog__cards-img"
+                  src="./images/cards-img.png"
+                  alt=""
+                />
+                <p class="catalog__cards-text">Рельефная печать</p>
+                <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
+                <div class="catalog__cards-colours">
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -grey.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -orange.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -green.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -black.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -blue.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -brown.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog__cards-prices">
+                  <p class="catalog__cards-price">3500 с.</p>
+                  <img
+                    class="catalog__cards-cart"
+                    src="./images/cart-img.png"
+                    alt=""
+                  />
+                </div>
+              </div>
 
-                              <div class="catalog__cards-box">
-                                <div class="catalog__cards-like">
-                                <p class="catalog__cards-numbers">5200</p>
-                                <img class="catalog__cards-heart" src="./images/heart-img.png" alt="">
-                                </div>
-                                <img class="catalog__cards-img" src="./images/cards-img.png" alt="">
-                                <p class="catalog__cards-text">Рельефная печать</p>
-                                <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
-                                <div class="catalog__cards-colours">
-                                <img class="catalog__colours" src="./images/Ellipse -grey.png" alt="">
-                                <img class="catalog__colours" src="./images/Ellipse -orange.png" alt="">
-                                <img class="catalog__colours" src="./images/Ellipse -green.png" alt="">
-                                <img class="catalog__colours" src="./images/Ellipse -black.png" alt="">
-                                <img class="catalog__colours" src="./images/Ellipse -blue.png" alt="">
-                                <img class="catalog__colours" src="./images/Ellipse -brown.png" alt="">
-                                </div>
-                                <div class="catalog__cards-prices">
-                                  <p class="catalog__cards-price">3500 с.</p>
-                                  <img class="catalog__cards-cart" src="./images/cart-img.png" alt="">
-                                  </div>
-                                </div>
+              <div class="catalog__cards-box">
+                <div class="catalog__cards-like">
+                  <p class="catalog__cards-numbers">5200</p>
+                  <img
+                    class="catalog__cards-heart"
+                    src="./images/heart-img.png"
+                    alt=""
+                  />
+                </div>
+                <img
+                  class="catalog__cards-img"
+                  src="./images/cards-img.png"
+                  alt=""
+                />
+                <p class="catalog__cards-text">Рельефная печать</p>
+                <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
+                <div class="catalog__cards-colours">
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -grey.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -orange.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -green.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -black.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -blue.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -brown.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog__cards-prices">
+                  <p class="catalog__cards-price">3500 с.</p>
+                  <img
+                    class="catalog__cards-cart"
+                    src="./images/cart-img.png"
+                    alt=""
+                  />
+                </div>
+              </div>
 
-         </div>
-        </div>
-        <div class="catalog__pages">
-          <img class="arrow" id="prev" src="./images/arrow.png" alt="">
-          <div class="catalog__numbers">
-          <p class="catalog__pages-numbers">1
-           </p>
-            <p class="catalog__pages-numbers">
-              2
-              </p>
-              <p class="catalog__pages-numbers">
-                3
-                ...
-                </p>
-                <p class="catalog__pages-numbers">
-                  10
-                  </p>
-                  <p class="catalog__pages-numbers">
-                    11
-                    </p>
-                    <p class="catalog__pages-numbers">
-                      12</p>
+              <div class="catalog__cards-box">
+                <div class="catalog__cards-like">
+                  <p class="catalog__cards-numbers">5200</p>
+                  <img
+                    class="catalog__cards-heart"
+                    src="./images/heart-img.png"
+                    alt=""
+                  />
+                </div>
+                <img
+                  class="catalog__cards-img"
+                  src="./images/cards-img.png"
+                  alt=""
+                />
+                <p class="catalog__cards-text">Рельефная печать</p>
+                <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
+                <div class="catalog__cards-colours">
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -grey.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -orange.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -green.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -black.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -blue.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -brown.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog__cards-prices">
+                  <p class="catalog__cards-price">3500 с.</p>
+                  <img
+                    class="catalog__cards-cart"
+                    src="./images/cart-img.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="catalog__cards-box">
+                <div class="catalog__cards-like">
+                  <p class="catalog__cards-numbers">5200</p>
+                  <img
+                    class="catalog__cards-heart"
+                    src="./images/heart-img.png"
+                    alt=""
+                  />
+                </div>
+                <img
+                  class="catalog__cards-img"
+                  src="./images/cards-img.png"
+                  alt=""
+                />
+                <p class="catalog__cards-text">Рельефная печать</p>
+                <p class="catalog__cards-sizes">Размер: Max. 41мм* 24мм</p>
+                <div class="catalog__cards-colours">
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -grey.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -orange.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -green.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -black.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -blue.png"
+                    alt=""
+                  />
+                  <img
+                    class="catalog__colours"
+                    src="./images/Ellipse -brown.png"
+                    alt=""
+                  />
+                </div>
+                <div class="catalog__cards-prices">
+                  <p class="catalog__cards-price">3500 с.</p>
+                  <img
+                    class="catalog__cards-cart"
+                    src="./images/cart-img.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <img class="arrow" id="next" src="./images/arrow-next.png" alt="">
+          <div class="catalog__pages">
+            <img class="arrow" id="prev" src="./images/arrow.png" alt="" />
+            <div class="catalog__numbers">
+              <p class="catalog__pages-numbers">1</p>
+              <p class="catalog__pages-numbers">2</p>
+              <p class="catalog__pages-numbers">3 ...</p>
+              <p class="catalog__pages-numbers">10</p>
+              <p class="catalog__pages-numbers">11</p>
+              <p class="catalog__pages-numbers">12</p>
+            </div>
+            <img class="arrow" id="next" src="./images/arrow-next.png" alt="" />
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <div class="footer__wrapper">
-        <footer class="footer">
-          <div class="container inner__footer">
-            <div class="footer__contents">
+      </section>
+    </main>
+    <div class="footer__wrapper">
+      <footer class="footer">
+        <div class="container inner__footer">
+          <div class="footer__contents">
             <a class="footer__logo" href="#">
-              <img class="footer__logo-img" src="./images/trodat_logo.png" alt="" />
+              <img
+                class="footer__logo-img"
+                src="./images/trodat_logo.png"
+                alt=""
+              />
             </a>
-            <p class="footer__description">Крупнейший производитель оснасток для печатей и штампов в мире</p>
+            <p class="footer__description">
+              Крупнейший производитель оснасток для печатей и штампов в мире
+            </p>
             <div class="footer__contacts">
               <div class="footer__numbers">
-             <p class="footer__numbers-text">+996  553 66 47 87</p>
-            </div>
-             <p class="footer__or">или</p>
-             <div class="footer__numbers">
-             <p class="footer__numbers-text">+996 558 66 47 87</p>
-            </div>
+                <p class="footer__numbers-text">+996 553 66 47 87</p>
+              </div>
+              <p class="footer__or">или</p>
+              <div class="footer__numbers">
+                <p class="footer__numbers-text">+996 558 66 47 87</p>
+              </div>
             </div>
           </div>
-            <nav class="footer__menu">
-              <ul class="footer__list footer__menu-list">
-                <p class="menu__list-title" href="#">Навигация</p>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Категории</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">О компании</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Новости</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Контакты</a>
-                </li>
-              </ul>
+          <nav class="footer__menu">
+            <ul class="footer__list footer__menu-list">
+              <p class="menu__list-title" href="#">Навигация</p>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Категории</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">О компании</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Новости</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Контакты</a>
+              </li>
+            </ul>
 
-              <ul class="footer__list footer__menu-list">
-                <p class="menu__list-title" href="#">Печати</p>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Круглые </a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Прямоугольные</a>
-                </li>
-                <li class="menu__list-tem">
-                  <a class="menu__list-link" href="#">Плоские</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Рельефные</a>
-                </li>
-              </ul>
+            <ul class="footer__list footer__menu-list">
+              <p class="menu__list-title" href="#">Печати</p>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Круглые </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Прямоугольные</a>
+              </li>
+              <li class="menu__list-tem">
+                <a class="menu__list-link" href="#">Плоские</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Рельефные</a>
+              </li>
+            </ul>
 
-              <ul class="footer__list footer__menu-list">
-                <p class="menu__list-title" href="#">Штампы</p>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">About</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Shop</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Product</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Track Order</a>
-                </li>
-              </ul>
+            <ul class="footer__list footer__menu-list">
+              <p class="menu__list-title" href="#">Штампы</p>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">About</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Shop</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Product</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Track Order</a>
+              </li>
+            </ul>
 
-              <ul class="footer__list footer__menu-list">
-                <p class="menu__list-title" href="#">Контакты</p>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Fruit & Vegetables</a>
-                </li>
-                <li class="menu__list-tem">
-                  <a class="menu__list-link" href="#">Meat & Fish</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Bread & Bakery</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Beauty & Health</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </footer>
-       <div class="footer__down-wrapper">
-          <div class="container footer__down">
-            <img class="footer__down-logo" src="./images/company_logo.png" alt="">
-            <p class="footer__down-text">Trodat © 2023. All Rights Reserved</p>
-          </div>
+            <ul class="footer__list footer__menu-list">
+              <p class="menu__list-title" href="#">Контакты</p>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">trodatkg@gmail.com</a>
+              </li>
+              <li class="menu__list-tem">
+                <a class="menu__list-link" href="#">Токтогула 125/1</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">(Бизнес центр Avangard), Bishkek</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Kyrgyzstan</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </footer>
+      <div class="footer__down-wrapper">
+        <div class="container footer__down">
+          <img
+            class="footer__down-logo"
+            src="./images/company_logo.png"
+            alt=""
+          />
+          <p class="footer__down-text">Trodat © 2023. All Rights Reserved</p>
         </div>
-        <script src="./JS/app.js"></script>
-</body>
+      </div>
+    </div>
+    <script src="./JS/app.js"></script>
+  </body>
 </html>
