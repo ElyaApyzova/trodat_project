@@ -1509,6 +1509,10 @@
   border-bottom: 1px solid var(--grey);
 }
 
+
+.catalog__mobile-box {
+  display: none;
+}
 .catalog__box {
   display: flex;
   align-items: center;
@@ -1702,7 +1706,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 23px;
-  flex-wrap: wrap;
 }
 
 
