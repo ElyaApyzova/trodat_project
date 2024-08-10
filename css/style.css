@@ -1875,7 +1875,7 @@
 
 .footer__menu {
   display: flex;
-  gap: 50px;
+  gap: 135px;
 }
 
 .footer__list {
@@ -1893,12 +1893,19 @@
   margin-bottom: 7px;
 }
 
+.menu__list-item {
+  width: 100%;
+  max-width: 120px;
+}
+
 .menu__list-link {
   font-family: 'Core Sans C', sans-serif;
   font-size: 13px;
   line-height: 19px;
   color: #999999;
 }
+
+
 
 .menu__list-link:hover {
   cursor: pointer;
