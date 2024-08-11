@@ -1823,6 +1823,7 @@
 }
 
 .footer {
+  
   padding: 80px 0px 100px;
 }
 
@@ -1879,6 +1880,7 @@
 }
 
 .footer__list {
+  
   display: flex;
   flex-direction: column;
   gap: 11px;
@@ -1912,6 +1914,12 @@
   color: var(--gray-scale-white);
 }
 
+.company__mobile-logo {
+  display: none;
+}
+
+  
+  
 
 
 
@@ -1924,16 +1932,15 @@
   background: #272B38;
   box-shadow: 0px -0.94px 0px 0px #333333;
   padding: 22px 0px;
+  order: 1000;
 }
 
-
-.footer__down-wrapper  {
+.company__logo {
   position: absolute;
-  background-image: url(../images/company_logo.png);
-  background-repeat: no-repeat;
+  top: 0;
+  width: 94px;
+  height: 30px;
 }
-
-
 
 .footer__down-text {
   font-family: var(--body-2);

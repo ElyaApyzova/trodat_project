@@ -727,8 +727,16 @@
           max-width: 280px;
         }
       
-      
-       
+    }
+
+
+    @media (max-width: 625px) {
+      .company__mobile-logo {
+        display: flex;
+        margin-top: 24px;
+        width: 94px;
+        height: 30px;
+      }
     }
 
     @media (max-width: 535px) {
@@ -824,4 +832,19 @@
   }
 
   
+}
+
+
+@media (max-width: 625px) {
+  .company__logo {
+   display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer__down-text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #7E7E7E;
+  }
 }
