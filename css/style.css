@@ -1977,3 +1977,30 @@
 .detailsofproducts {
   padding: 50px 0px 184px;
 }
+
+.detailsofproducts__list {
+  
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.detailsofproducts__list-link {
+  position: relative;
+  font-size: 13px;
+  line-height: 11px;
+  color: #868686;
+}
+
+ .detailsofproducts__list-numbers {
+  font-size: 13px;
+  line-height: 11px;
+  font-weight: 500;
+}
+
+.detailsofproducts__list-item::after  {
+  position: absolute;
+  content: "/";
+  margin-left: 5px;
+}
+
