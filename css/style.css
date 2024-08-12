@@ -1979,10 +1979,10 @@
 }
 
 .detailsofproducts__list {
-  
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-bottom: 30px;
 }
 
 .detailsofproducts__list-link {
@@ -2002,5 +2002,13 @@
   position: absolute;
   content: "/";
   margin-left: 5px;
+}
+
+
+
+
+.detailsofproducts__container {
+  display: flex;
+  gap: 50px;
 }
 
