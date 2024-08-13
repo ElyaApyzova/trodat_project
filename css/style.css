@@ -2012,6 +2012,7 @@
 .detailsofproducts__container {
   display: flex;
   gap: 50px;
+  margin-bottom: 50px;
 }
 
 .detailsofproducts__imgcontainer-img {
@@ -2128,8 +2129,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  width: 100%;
-  max-width: 257px;
 }
 
 .detailsofproducts__contents-img {
