@@ -2049,12 +2049,12 @@
 
 .slider__img-text {
   position: absolute;
-  top: 97%;
+  top: 100%;
   left: 29%;
   font-size: 25px;
   font-weight: 500;
   line-height: 22px;
-  translate: -40% -50%;
+  translate: -40% -20%;
   color: var(--gray-scale-white);
 }
 
@@ -2108,7 +2108,121 @@
   gap: 200px;
   padding-top: 20px;
   border-top: 1px solid #E1E1E1;
+  margin-bottom: 34px;
 }
 
+.detailsofproducts__contents-colours {
+  width: 100%;
+  max-width: 257px;
+}
 
+.detailsofproducts__contents-subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 13px;
+  color: #868686;
+  margin-bottom: 34px;
+}
 
+.detailsofproducts__contents-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  max-width: 257px;
+}
+
+.detailsofproducts__contents-img {
+  width: 20px;
+  height: 20px;
+}
+
+.detailsofproducts__contents-sizes  {
+  width: 100%;
+  max-width: 299px;
+}
+
+.detailsofproducts__contents-title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #868686;
+  margin-bottom: 25px;
+}
+
+.detailsofproducts__contents-description {
+  font-size: 15px;
+  line-height: 18px;
+  color: #515151;
+}
+
+.detailsofproducts__contents-prices {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 34px;
+}
+
+.detailsofproducts__contents-sale {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 49px;
+  color: #EE575C;
+}
+
+.detailsofproducts__contents-oldprice {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #868686;
+  text-decoration: line-through;
+}
+
+.detailsofproducts__contents-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detailsofproducts__contents-calculator {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  padding: 5px;
+  background: #F3F3F3;
+  border-radius: 100px;
+}
+
+.detailsofproducts__contents-increment {
+  width: 30px;
+  height: 30px;
+}
+
+.detailsofproducts__contents-num {
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--black);
+}
+
+.detailsofproducts__contents-btn {
+  background: #EE575C;
+  padding: 10px 52px;
+  border-radius: 100px;
+}
+
+.detailsofproducts__contents-cart {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--gray-scale-white);
+}
+
+.detailsofproducts__contents-line {
+  margin: 0px 10px;
+}
+
+.detailsofproducts__contents-heart {
+  width: 24px;
+  height: 24px;
+}
