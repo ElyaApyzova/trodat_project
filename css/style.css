@@ -2225,3 +2225,22 @@
   width: 24px;
   height: 24px;
 }
+
+
+.detailsofproducts__description {
+  margin-bottom: 30px;
+}
+
+.detailsofproducts__description-title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #868686;
+  margin-bottom: 14px;
+}
+
+.detailsofproducts__description-text {
+  font-size: 15px;
+  line-height: 19px;
+  color: #515151;
+}
