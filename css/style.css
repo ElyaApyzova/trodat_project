@@ -2244,3 +2244,54 @@
   line-height: 19px;
   color: #515151;
 }
+
+.detailsofproducts__examples {
+  margin-bottom: 50px;
+}
+
+.detailsofproducts__examples-text {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #868686;
+  margin-bottom: 10px;
+}
+
+.detailsofproducts__container-slider {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.detailsofproducts__slidbtn {
+  width: 9px;
+  height: 18px;
+}
+
+.detailsofproducts__container-slidimgs {
+  display: flex;
+  gap: 28px;
+}
+
+.detailsofproducts__container-slidimg {
+  width: 140px;
+ height: 140px;
+}
+
+.detailsofproducts__container-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.detailsofproducts__container-reddot {
+  width: 12px;
+ 
+}
+
+.detailsofproducts__container-dot {
+  width:8px;
+  
+}
