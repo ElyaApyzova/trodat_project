@@ -2034,6 +2034,7 @@
 }
 
 .detailsofproducts__sliders {
+  position: relative;
   display: flex;
   gap: 15px;
 }
@@ -2044,18 +2045,16 @@
   border-radius: 10px;
 }
 
-.dark__slider-img {
-  position: relative;
-}
+
 
 .slider__img-text {
   position: absolute;
-  top: 100%;
-  left: 29%;
+  top: 50%;
+  left: 89%;
   font-size: 25px;
   font-weight: 500;
   line-height: 22px;
-  translate: -40% -20%;
+  translate: -50% -50%;
   color: var(--gray-scale-white);
 }
 
