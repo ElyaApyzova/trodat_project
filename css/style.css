@@ -2216,6 +2216,10 @@
   color: var(--gray-scale-white);
 }
 
+.detailsofproducts__cart {
+  display: none;
+}
+
 .detailsofproducts__contents-line {
   margin: 0px 10px;
 }
@@ -2287,7 +2291,7 @@
 
 .detailsofproducts__container-reddot {
   width: 12px;
- 
+  
 }
 
 .detailsofproducts__container-dot {
