@@ -2295,3 +2295,26 @@
   width:8px;
   
 }
+
+.detailsofproducts__container-sameproducts {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #23262F;
+  margin-bottom: 15px;
+
+}
+
+
+.detailsofproducts__container-cardproducts {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.detailsofproducts__container-sliders {
+  display: flex;
+  gap: 41px;
+}
