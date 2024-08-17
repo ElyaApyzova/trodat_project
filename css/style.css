@@ -2058,6 +2058,10 @@
   color: var(--gray-scale-white);
 }
 
+.detailsofproducts__imgcontainer-list {
+  display: none;
+}
+
 .detailsofproducts__contents-text {
   font-size: 15px;
   font-weight: 500;
