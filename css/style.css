@@ -2080,7 +2080,9 @@
   margin-bottom: 20px;
 }
 
-
+.detailsofproducts__contents-mobbox {
+  display: none;
+}
 .detailsofproducts__contents-box {
   display: flex;
   align-items: center;
