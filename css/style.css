@@ -1685,6 +1685,7 @@
 }
 
 #category {
+  position: relative;
   appearance: none;
   border: 1px solid #686868;
   width: 13px;
@@ -1695,17 +1696,27 @@
 }
 
 #category:checked:before{
-  content:'\2713'; 
-  background: blue; 
+  position: absolute;
+  content: '';
+  background: var(--red);
   width:100%; 
-  height:100%; 
+  height:100%;
+  background-image: url('../images/checkbox.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
   top:0;
   left:0;
   display:flex; 
   align-items:center; 
   justify-content:center; 
-  color:var(--gray-scale-white); 
-  font-weight: 700;
+}
+
+
+
+
+#category:checked{
+  border: 2px solid var(--red);
 }
 
 .catalog__text {
