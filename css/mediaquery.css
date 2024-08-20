@@ -1859,3 +1859,16 @@
     
   }
  }
+
+@media (max-width:1242px) {
+  
+}
+ .detailsofproducts__container-sliders {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.detailsofproducts__container-sliders .catalog__cards-mobilebox{
+  display: none;
+}

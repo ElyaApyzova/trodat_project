@@ -2336,12 +2336,14 @@
 
 .detailsofproducts__container-cardproducts {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
   margin-bottom: 25px;
 }
 
 .detailsofproducts__container-sliders {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 41px;
 }
