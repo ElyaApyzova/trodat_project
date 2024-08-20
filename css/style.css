@@ -2285,6 +2285,7 @@
 
 .detailsofproducts__container-slider {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
   margin-bottom: 20px;
@@ -2297,12 +2298,12 @@
 
 .detailsofproducts__container-slidimgs {
   display: flex;
-  gap: 28px;
+  gap: 30px;
 }
 
 .detailsofproducts__container-slidimg {
-  width: 140px;
- height: 140px;
+  width: 150px;
+ height: 150px;
 }
 
 .detailsofproducts__container-list {
