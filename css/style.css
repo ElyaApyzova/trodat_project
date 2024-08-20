@@ -1684,6 +1684,12 @@
   margin-bottom: 10px;
 }
 
+.catalog__choose {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 #category {
   position: relative;
   appearance: none;
