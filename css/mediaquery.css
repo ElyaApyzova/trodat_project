@@ -1928,15 +1928,20 @@
    
     }
 
-    @media (max-width: 750px) {
-
- 
+    @media (max-width: 480px) {
       .detailsofproducts__container-sliders {
-        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
       }
       
-     
+    }
+
+    @media (max-width: 450px) {
+      .detailsofproducts__container-sliders {
+        gap: 60px;
       }
+      
+    }
 
 
 
